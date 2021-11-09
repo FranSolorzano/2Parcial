@@ -1,0 +1,22 @@
+﻿@model SegundoParcial.Models.Cajero
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+<h2>Bienvenido a nuestro Cajero, gracias por preferirnos</h2>
+<div>
+
+    @using (Html.BeginForm("Index1", "Cajero", FormMethod.Post))
+    {
+
+        <label>Introduzca cantidad a retirar</label>
+        @Html.TextBoxFor(total => total.cantidad)
+        <br />
+
+
+        <input type="submit" />
+
+    }
+
+</div>>
